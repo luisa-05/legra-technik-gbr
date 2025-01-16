@@ -1,0 +1,28 @@
+@import 'vars';
+
+.footer {
+  background-color: $footer-background-color;
+  color: $white;
+  padding: 2.5rem 6.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+
+  &__links {
+    display: flex;
+    gap: 1.88rem;
+    align-self: flex-end;
+
+    a {
+      text-decoration: none;
+      color: $white;
+      font-weight: 600;
+
+      &:hover {
+        color: $nav-background-color;
+        text-decoration: underline;
+        transition: all 0.3s;
+      }
+    }
+  }
+}

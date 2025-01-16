@@ -1,0 +1,25 @@
+.privacy-policy-main {
+  padding-top: 6rem;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+
+  ol {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-left: 2.5rem;
+
+    .main-point {
+      span {
+        font-weight: 600;
+      }
+    }
+
+    li {
+      list-style: none;
+    }
+  }
+}

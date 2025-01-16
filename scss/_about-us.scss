@@ -1,0 +1,61 @@
+@import 'vars';
+
+.about-us-main {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding-top: 6rem;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+
+  h1 {
+    padding-left: 5rem;
+  }
+
+  section {
+    padding: 3rem 5rem;
+    &:hover {
+      transform: translateY(-0.3rem);
+      transition: all 0.3s;
+    }
+
+    a {
+      color: $primary-color;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    span {
+      font-weight: 600;
+    }
+  }
+
+  .introduction {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-top: 3px solid $primary-color;
+    border-bottom: 3px solid $primary-color;
+  }
+
+  .short-presentation {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: #f3f3f3;
+  }
+
+  .qualifications {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .closing-sentence {
+    padding-left: 5rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: $primary-color;
+  }
+}

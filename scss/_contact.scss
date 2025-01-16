@@ -1,0 +1,53 @@
+@import 'vars';
+
+.contact-main {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  padding-top: 6rem;
+  padding-left: 8.5rem;
+
+  .contact-data {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .address {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+      h3 {
+        font-weight: 600;
+      }
+    }
+
+    .call-mail-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+      .phone-number,
+      .email {
+        display: flex;
+        gap: 0.31rem;
+        align-items: center;
+
+        svg {
+          fill: $main-text-color;
+          width: 1.38rem;
+          height: 1.38rem;
+        }
+
+        a {
+          color: $main-text-color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .contact-closing-sentense {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: $primary-color;
+  }
+}

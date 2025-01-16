@@ -1,0 +1,104 @@
+@import 'vars';
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 6rem;
+  background-color: $nav-background-color;
+  border-top: 0.2rem solid $border-color;
+  border-bottom: 0.2rem solid $border-color;
+  // box-sizing: border-box;
+
+  &__logo {
+    width: 5rem;
+    object-fit: contain;
+    cursor: pointer;
+  }
+
+  &__link-container {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    height: 100%;
+
+    .main-point {
+      position: relative;
+      display: flex;
+      align-items: center;
+      list-style-type: none;
+      padding: 0 0.63rem;
+      height: 100%;
+      border-top: 0.2rem solid transparent;
+      border-bottom: 0.2rem solid transparent;
+
+      a {
+        text-decoration: none;
+        color: $main-text-color;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        &:hover {
+          transition: all 0.3ms;
+          color: $primary-color;
+        }
+      }
+
+      &:hover {
+        border-top: 0.2rem solid $primary-color;
+        box-sizing: content-box;
+
+        .dropdown {
+          display: flex;
+        }
+      }
+    }
+
+    .dropdown {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      background-color: $nav-background-color;
+      top: 100%;
+      left: 0;
+      z-index: 1000;
+      // border: 0.2rem solid $border-color;
+      border-top: 0.2rem solid $primary-color;
+
+      li {
+        list-style-type: none;
+        cursor: pointer;
+        padding: 0.6rem 1.25rem;
+
+        &:first-child {
+          padding-top: 1.2rem;
+        }
+
+        &:last-child {
+          padding-bottom: 1.2rem;
+        }
+
+        a {
+          text-decoration: none;
+          color: $main-text-color;
+          font-weight: 500;
+        }
+
+        &:hover {
+          background-color: $primary-color;
+
+          a {
+            transition: all 0.3ms;
+            color: $white;
+          }
+        }
+      }
+
+      &:hover {
+        .dropdown {
+          display: flex;
+        }
+      }
+    }
+  }
+}

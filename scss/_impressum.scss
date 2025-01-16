@@ -1,0 +1,16 @@
+.impressum-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.63rem;
+
+  .contact-data {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    a {
+      color: $main-text-color;
+      text-decoration: none;
+    }
+  }
+}

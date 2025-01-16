@@ -1,0 +1,63 @@
+@import 'nav';
+@import 'header';
+@import 'footer';
+@import 'contact';
+@import 'impressum';
+@import 'about-us';
+@import 'hero';
+@import 'vars';
+@import 'privacy-policy';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/roboto/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/roboto/Roboto-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTSans';
+  src: url('../fonts/PT_Sans/PTSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTSans';
+  src: url('../fonts/PT_Sans/PTSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  // font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'PTSans';
+  color: $main-text-color;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  main {
+    flex: 1;
+    padding-bottom: 7rem;
+    font-size: 1.38rem;
+
+    h1 {
+      font-size: 3rem;
+      // text-transform: uppercase;
+    }
+  }
+}
