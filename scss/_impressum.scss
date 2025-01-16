@@ -1,16 +1,30 @@
-.impressum-content {
+.impressum-main {
+  padding-top: 6rem;
+  padding-left: 8.5rem;
+  padding-right: 8.5rem;
   display: flex;
   flex-direction: column;
-  gap: 0.63rem;
+  gap: 2rem;
 
-  .contact-data {
+  .impressum-content {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
 
-    a {
-      color: $main-text-color;
-      text-decoration: none;
+    .contact-data {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      a {
+        color: $main-text-color;
+        text-decoration: none;
+        width: fit-content;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
   }
 }
